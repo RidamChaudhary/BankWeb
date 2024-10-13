@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="home-header">
+        <h2 id="greeting">Hii! Customer</h2>
+    </header>
+    <main class="home-main">
+        <div class="home-section"id="update-details">
+            <h3>Update Details</h3>
+            <button onclick="location.href='update.html';">Edit</button>
+        </div>
+        <div class="home-section"id="deposit-money">
+            <h3>Deposit Money</h3>
+            <button onclick="showDepositForm()">Deposit</button>
+        </div>
+        <div class="home-section"id="withdraw-money">
+            <h3>Withdraw Money</h3>
+            <button onclick="showWithdrawForm()">Withdraw</button>
+        </div>
+        <div class="home-section"id="check-balance">
+            <h3>Check Bank Balance</h3>
+            <button onclick="checkBalance()">Check Balance</button>
+        </div>
+
+            
+
+        <!-- Deposit Form -->
+        <div id="deposit-form" class="modal">
+            <form onsubmit="handleDeposit(event)">
+                <h4>Deposit Money</h4>
+                <label for="deposit-amount">Amount</label>
+                <input type="number" id="deposit-amount" required>
+                <button type="submit" class="btn green">Deposit</button>
+                <button type="button" onclick="closeDepositForm()">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Withdraw Form -->
+        <div id="withdraw-form" class="modal">
+            <form onsubmit="handleWithdraw(event)">
+                <h4>Withdraw Money</h4>
+                <label for="withdraw-amount">Amount</label>
+                <input type="number" id="withdraw-amount" required>
+                <button type="submit" class="btn green">Withdraw</button>
+                <button type="button" onclick="closeWithdrawForm()">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>

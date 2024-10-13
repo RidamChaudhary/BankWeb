@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*height: 100%;  Full height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f0; /* Light background color */
+}
+.acknowledgment {
+color: green;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background */
+    border: 1px solid #c8e6c9; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space between form and acknowledgment */
+}
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;/* Use absolute positioning for header */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.form-container {
+position: absolute;
+top: 145px;
+right: 530px;
+max-height: 90vh; 
+    max-width: 450px; /* Slightly increased max width */
+    width: 100%; /* Full width for smaller screens */
+    padding: 50px; /*Increased padding for more space */
+    border: 2px solid #4CAF50;
+    border-radius: 8px; /* Slightly rounder corners */
+    background-color: #fff; /* White background for the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+.form-container1 {
+    max-width: 500px; /* Set max width for form */
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px; /* Padding for form */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounder corners */
+    background-color: #fff; /* White background for the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
+     /* Allow vertical scrolling for the form */
+    max-height: 125vh; /* Limit form height to 90% of viewport */
+}
+label {
+    display: block;
+   margin: 10px 0 5px;
+    font-size: 16px; /* Increased font size for labels */
+padding:3px;
+}
+h2 {
+    margin: 0; /* Remove default margin */
+}
+
+input,textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for input fields */
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    background-color: #fff; /* White background for inputs */
+    color: #333; /* Dark text for inputs */
+}
+textarea {
+    resize: vertical; /* Allow vertical resizing for textarea */
+}
+
+.btn {
+    width: 100%;
+    background-color: green; /* Green button */
+    color: white; /* White text for button */
+    border: none;
+    padding: 12px; /* Increased padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Increased font size for button */
+}
+
+.btn:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+.link {
+    margin-top: 15px; /* Added margin for spacing */
+    text-align: center; /* Center the link */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#update-details {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);*/
+    background-color: #f9f9f9;
+}
+
+#update-details h2 {
+    text-align: center;
+    background-color: #4CAF50;
+color: white; /* White text for contrast */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px;
+}
+
+#update-details label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#update-details input,
+#update-details select,
+#update-details textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#update-details button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#update-details button:hover {
+    background-color: #45a049;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f0fff0; /* Light green background */
+    color: #4CAF50; /* Green text */
+    border: 1px solid #a3dca3; /* Slightly darker green border */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3); /* Slightly more pronounced shadow */
+    z-index: 1000;
+    text-align: center;
+    font-size: 18px; /* Increased font size for better readability */
+    font-family: Arial, sans-serif; /* Font family */
+}
+   
+form {
+    display: flex;
+    flex-direction: column;
+}
+button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.home-header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    margin-bottom : 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.home-main {
+    position : relative;
+    top:60px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-section {
+   max-width: 600px;
+    width: 100%;
+    margin: 15px; /* Space between sections */
+    padding: 20px; /* Padding for better spacing */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    text-align: center; /* Center text */
+    border: 2px solid #4CAF50;
+
+    }
+.home-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text for button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.home-section button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1;  Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal form {
+    background-color: white; /* White background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px; /* Width of the form */
+}
+
+.modal h4 {
+    margin: 0 0 10px 0;
+}
+
+.modal button {
+    margin-top: 10px;
+}

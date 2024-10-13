@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATA BANK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index">
+    <div class="container">
+        <header>
+            <div class="auth-buttons">
+                <a href="login1.html" class="button">Login</a>
+                <a href="register1.html" class="button">Register</a>
+            </div>
+            <h1>TATA BANK</h1>
+            <h3>Accounts, Loans, and Services Tailored for you.</h3>
+        </header>
+        <main>
+            <section class="account-cards">
+                <div class="card" onclick="showDetails('savings')">
+                    <img src="https://helloartsy.com/wp-content/uploads/kids/places/how-to-draw-a-bank/how-to-draw-a-bank-step-9-1536x1536.jpg" alt="Savings Account">
+                    <h2>Savings Account</h2>
+                    <p>Grow your savings with competitive interest rates.</p>
+                </div>
+                <div class="card" onclick="showDetails('current')">
+                    <img src="https://helloartsy.com/wp-content/uploads/kids/places/how-to-draw-a-bank/how-to-draw-a-bank-step-9-1536x1536.jpg" alt="Current Account">
+                    <h2>Current Account</h2>
+                    <p>Manage your business transactions with ease.</p>
+                </div>
+                <div class="card" onclick="showDetails('salary')">
+                    <img src="https://helloartsy.com/wp-content/uploads/kids/places/how-to-draw-a-bank/how-to-draw-a-bank-step-9-1536x1536.jpg" alt="Salary Account">
+                    <h2>Salary Account</h2>
+                    <p>Specialized accounts for employees with exclusive benefits.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer-contact">
+        <div class="footer-content">
+            <h4>Contact Us</h4>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <p>Email: support@tatabank.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 123 Bank St, Financial City, Country</p>
+        </div>
+    </footer>
+
+    <script>
+        function showDetails(accountType) {
+            let message = "";
+            if (accountType === 'savings') {
+                message = "Savings Account: Enjoy higher interest rates and flexible access to your funds.";
+            } else if (accountType === 'current') {
+                message = "Current Account: Ideal for businesses, offering overdraft and checkbook facilities.";
+            } else if (accountType === 'salary') {
+                message = "Salary Account: Exclusive benefits for employees, including lower fees and more.";
+            }
+            alert(message);
+        }
+    </script>
+</body>
+</html>

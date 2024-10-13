@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <h1>Login</h1> <!-- Changed to Login -->
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <label for="account-no">Customer Account No</label>
+                <input type="text" id="account-no" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit" class="btn green">Login</button>
+                <p><a href="register1.html">Doesn't have an account? Register</a></p>
+            </form>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+</body>
+</html>

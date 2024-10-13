@@ -1,0 +1,119 @@
+body {
+    background-color: #D3D3D3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.index {
+    font-family: Arial, sans-serif; 
+    background-size: cover;
+    color: #333; /* Change text color to a darker shade for better contrast */
+}
+
+.container {
+    text-align: center;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 100px; 
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px; /* Increased padding for better size */
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1.1em; /* Slightly larger font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+h1 {
+    font-size: 80px; /* Reduced size for better balance */
+    margin: 25px 0;
+    color: #000000; 
+}
+
+h3 {
+    color: brown;
+    font-size: 1.5em; /* Adjusted font size */
+    margin-bottom: 30px; /* Added margin for spacing */
+}
+
+.account-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6); /* Darker background for better readability */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added shadow transition */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+h2 {
+    margin: 15px 0;
+    color: white;
+    font-size: 1.5em; /* Adjusted font size for headings */
+}
+
+p {
+    font-size: 16px;
+    color: #ddd; /* Lighter color for readability */
+}
+
+.footer-contact {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content h4 {
+    margin: 0;
+    font-size: 1.8em; /* Increased font size for emphasis */
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
